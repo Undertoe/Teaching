@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     std::srand(std::time(nullptr)); // use current time as seed for random generator
-    int count = 10;
+    int count = 20;
 
     int correct = 0;
     cout << "Starting questions!\n";
@@ -22,9 +22,28 @@ int main()
         int first = GetRandom();
         int second = GetRandom();
         int getAnswer;
-        int answer = first + second;
+        int answer;
 
-        cout << first << " + " << second << " = ???\n";
+        /// Addition
+        if(i % 2 == 0)
+        {
+            answer = first + second;
+            cout << first << " + " << second << " = ???\n";
+        }
+        /// subtraction
+        else
+        {
+            if(first > second)
+            {
+                answer = first - second;
+                cout << first << " - " << second << " = ???\n";
+            }
+            else
+            {
+                answer = second - first;
+                cout << second << " - " << first << " = ???\n";
+            }
+        }
         cin >> getAnswer;
 
         if(answer != getAnswer)
@@ -44,6 +63,22 @@ int main()
     if(percent > 89.0)
     {
         cout << "That's an A!\n";
+    }
+    else if(percent > 79.9)
+    {
+        cout << "Thats a B!\n";
+    }
+    else if(percent > 69.9)
+    {
+        cout << "Thats a C!\n";
+    }
+    else if(percent > 59.9)
+    {
+        cout << "Thats a D!\n";
+    }
+    else
+    {
+        cout << "That's an F\n";
     }
 
 

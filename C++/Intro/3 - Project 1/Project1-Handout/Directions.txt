@@ -1,0 +1,37 @@
+How to build: 
+	g++ main.cpp -std=c++11 
+
+How to run (if it compiles successfully)
+	./a.out
+
+
+*************************************************
+
+Directions: 
+	Write a program that will give 20 addition questions or 
+subtraction questions.  The user will provide the their answer, 
+and this answer will be checked on weather if its correct or not.  
+The number of correct answers will then be used to give the user 
+both a % grade and a Letter Grade. 
+
+Important notes:
+- Numbers should be limited from 0 -> 9
+- Subtraction problems should always subtract larger from the smaller.
+- Please provide basic comments on any if / else statements stating 
+	what their purpose is.   If an if statement is used to check
+	weather we are performing addition or subtraction, simply 
+	just notate addition check.  The following else bracket should
+	then be noted that this block is for the subtraction.
+	
+	/// Addition
+	if(i % 2 == 0)
+	{ ... }
+	/// subtraction
+	else
+	{ ... }
+
+- Try to limit repeating code in various if / else blocks.   Try to find 
+	ways to run the same line of code only once.  
+- Try to think about how to organize if / else statements to limit how much
+	typing you have to do, and how many computations the computer must 
+	do.
