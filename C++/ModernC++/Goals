@@ -1,0 +1,45 @@
+Project 1:
+- auto, function return auto
+- std::vector
+- Lambdas
+- Enum Class
+- std::chrono
+- #include <algorithms>
+- Subscripts
+- Operator Overloads
+- Object Casting (static_cast in project)
+
+Project 2: 
+- #include <map>
+- #include <memory>
+- #include <regex>
+- std::copy std::move
+- Numerics 
+- Exceptions
+
+
+Project 3:
+- #include <thread>
+- #include <atomic>
+- #include <mutex>
+- #include <conditional_variable>
+- using algorithms in parallel use
+
+
+Project 4:
+- Templates
+- constexpr
+
+
+Final Project
+- Take a project from previous years and Modernize it!  This can be something from a 300+ level course.
+- Report on major changes, prepare a 10-15 minute presentation on what you did, and why.
+- Show C++ Core Guidelines examples!
+- you should use something from each of the previous projects.
+	- Projects must be Multithreaded
+	- Projects should show proper use of std::unique_pointer
+	- Lambdas
+	- stl containers.
+	- Grad students: Required to use templates / constexpr
+- If you can't think of any, heres some:
+	- 

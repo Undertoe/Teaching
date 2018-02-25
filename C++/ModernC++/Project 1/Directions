@@ -1,0 +1,43 @@
+Create your own version of a Priority Queue using a Heap like like substructure.  
+
+STL Library goals:
+- std::vector
+- Lambdas
+- std::chrono
+- #include <algorithms>
+- Subscripts
+- Operator Overloads
+
+
+Restrictions:
+1) Your basic DataStructure must be a std::vector
+2) You cannot use any standard For Loops.  Ex: for(int i = 0; i < vector::size(); i++) // THIS IS NOT ALLOWED.
+3) The priority queue will use the structure below:
+
+enum class Priority : int
+{
+	HIGH = 5,
+	MEDIUM = 3,
+	LOW = 1;
+}
+
+struct Task
+{
+	Priority priority;
+	std::chrono::duration calculationTime;
+	std::string output;
+};
+	the sorting of this will be done under the following rules.
+
+	a) The higher priority always has priority
+	b) If two priorities are equal, the smaller duration will go.
+
+
+4) When these tasks are popped off the top of the Queue, you need to output using the Task, and not the output.  There are things that need to be implemented for this.
+5) Your queue should implement the following public functions:
+	a) Push /// pushes the new item into the priority queue, re-sorting if needed.
+	b) Pop  /// pops the next item off of the queue, and re-sorts the queue.
+		/// throw an error if this would fail.
+6) No pointers are allowed.   We want everything on the stack, to let std::vector do the memory managment for us.  
+7) Remember your RAII.  The less you're having to manage an object's scope the better.
+8) There may be a few operators that need to be implemented in task!
